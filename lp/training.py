@@ -2,7 +2,7 @@ import dgl
 import torch
 import torch.nn.functional as F
 from sklearn.metrics import roc_auc_score
-from LinkPred.lpmodel import LPmodel
+from lp.lpmodel import LPmodel
 
 
 def get_num_nodes_dict(graph):
