@@ -1,7 +1,7 @@
 ## 1. Application Scenarios
 ### 1.1 Key concepts
 Incognito shareholder: In order to circumvent the law or for other reasons, borrow the name of others to set up a company or make capital contribution in the name of others, and in the company's articles of association, shareholder register and business registration, are recorded as the actual contributors of others.
-### 1.2 Power
+### 1.2 Motivation
 The hidden shareholders are the most frequent cases of legal disputes of the company. If we can identify the hidden shareholders of the company as early as possible, it will be of great help to the company investment, legal disputes and other problems.
 ## 2. Model
 ### 2.1 Data generation
