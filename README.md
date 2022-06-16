@@ -16,9 +16,9 @@ In the preprocessing part, we first use the Index encoding method to encode the 
 Then the positive sample and negative sample data are input into the encoder, which uses GNN-based graph embedding, consisting of two layers of RGCN, which can utilize the information of neighboring entities within two hops in the graph embedding process.
 #### 2.2.3 Decoder
 The decoder uses the DistMult scoring function to take the embedding representation of a node as input and outputs the probability that the relationship between two nodes is an implicit shareholder relationship.
-### 2.3 Model evaluation
+### 2.3 Model Performance
 We use AUC as the evaluation metric, and the optimal AUC is 89.2%
-### 2.3 Prediction and result preservation
+### 2.3 Prediction and result
 We also generate a small portion of test data for prediction and save the prediction results as CSV files for presentation on the front-end
 ## 3. Highlights
 We proposed a solution to the problem of hidden shareholder identification, generated data based on realistic situations, designed a model, and got okay results. And, compared with existing enterprise knowledge graph products, they do not have the function of hidden shareholder discovery. In this regard, it is superior to the existing enterprise knowledge graph products.
