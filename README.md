@@ -8,10 +8,10 @@ The hidden shareholders are the most frequent cases of legal disputes of the com
 The data of hidden shareholders are few and not targeted in the previous data collection. To address this issue, we generated some data that consisted mainly of shareholders and companies.
 - The shareholders will be associated with a certain number of legal disputes in order to simulate the emergence of the hidden shareholders in the display due to legal issues.
 - In addition, certain relationships will be generated between the hidden shareholders and the real shareholders, such as family and friends, in order to simulate the reality in which the revealed shareholders are more closely related to the hidden shareholders.
-### 2.2 Linkage prediction model
+### 2.2 Link prediction model
 We treat the real edge as a positive sample and generate a negative sample based on random noise to convert into a binary classification problem, for which an encoder+decoder model can be fitted.
 #### 2.2.1 Data preprocessing
-In the preprocessing part, we first use the Index coding method to encode the node features of the map, and then add reverse edges to the map to enhance the mobility of the information on the map, and finally perform negative sampling to get the negative sample data, and the current negative sampling ratio is 1:1.
+In the preprocessing part, we first use the Index encoding method to encode the node features of the graph, and then add reverse edges to the graph to enhance the mobility of the information on the graph, and finally perform negative sampling to get the negative sample data, and the current negative sampling ratio is 1:1.
 #### 2.2.2 Encoder
 Then the positive sample and negative sample data are input into the encoder, which uses GNN-based graph embedding, consisting of two layers of RGCN, which can utilize the information of neighboring entities within two hops in the graph embedding process.
 #### 2.2.3 Decoder
